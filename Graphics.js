@@ -40,7 +40,7 @@ if(mouseIsPressed){
 camera(0, 0, 20 + abs(sin(frameCount * 0.01)) * 500, 0, 0, 0, 0, 1, 0); //마우스를 눌렀을 때, 바다 확대&축소 camera 사용
 }
 ambientLight(60, 60, 60);
-pointLight(255, 255, 255, locX, locY, 100);
+pointLight(255, 255, 255, locX, locY, 100);//마우스 커서 움직임대로 Light
   var yoff = flying;
 for (var y = 0; y < rows; y++) {
 var xoff = 0;
